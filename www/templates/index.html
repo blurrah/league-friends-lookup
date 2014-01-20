@@ -1,0 +1,17 @@
+<!-- 
+  This template gets placed in the Pet tab's <nav-view> directive.
+  It was wired up in the app config (app.js) 
+  The 'pets' data comes from its $scope within PetIndexCtrl (controller.js)
+-->
+<view title="'Friends lookup'">
+  <content has-header="true" has-tabs="true">
+    <list>
+      <item ng-repeat="player in players" type="item-text-wrap" href="#/tab/players/{{player.id}}">
+        <img src="img/profileicon/{{player.icon}}.png" />
+        <h3>{{player.name}}</h3>
+        <p>{{player.status}}</p>
+        </item>
+      </item>
+    </list>
+  </content>
+</view>
