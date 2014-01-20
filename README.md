@@ -1,6 +1,10 @@
-ionic-angular-cordova-seed
+League Friends Lookup
 ==========================
 
-The perfect starting point for an Ionic project.
+Quick sample application to display which friends are online or ingame in League of Legends.
 
-- [Ionic Tutorials](http://ionicframework.com/tutorials/)
+Static data at the moment because the spectator servers are down.
+
+Made with [Ionic Framework](http://ionicframework.com/)
+
+League Of Legends and its icons are Copyright Riot Games.
