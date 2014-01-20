@@ -23,7 +23,7 @@ angular.module('ioniclol', ['ionic', 'ioniclol.services', 'ioniclol.controllers'
       templateUrl: "templates/tabs.html"
     })
 
-    // the pet tab has its own child nav-view and history
+    
     .state('tab.players-index', {
       url: '/players',
       views: {
@@ -53,8 +53,7 @@ angular.module('ioniclol', ['ionic', 'ioniclol.services', 'ioniclol.controllers'
       }
     });
 
-  // if none of the above states are matched, use this as the fallback
-  //$urlRouterProvider.otherwise('/tab/players');
+  $urlRouterProvider.otherwise('/tab/players');
 
 });
 
