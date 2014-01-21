@@ -44,11 +44,11 @@ angular.module('ioniclol', ['ionic', 'ioniclol.services', 'ioniclol.controllers'
       }
     })
 
-    .state('tab.about', {
-      url: '/about',
+    .state('tab.settings', {
+      url: '/settings',
       views: {
-        'about-tab': {
-          templateUrl: 'templates/about.html'
+        'settings-tab': {
+          templateUrl: 'templates/settings.html'
         }
       }
     });

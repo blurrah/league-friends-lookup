@@ -1,5 +1,6 @@
-<view title="'Friends lookup'">
-  <content has-header="true" has-tabs="true">
+<view title="'League Friends Lookup'">
+  <content on-refresh="onRefresh()" has-header="true" has-tabs="true">
+    <refresher></refresher>
     <list>
       <item ng-repeat="player in players" type="item-text-wrap" href="#/tab/players/{{player.id}}">
         <img src="img/profileicon/{{player.icon}}.png" />
