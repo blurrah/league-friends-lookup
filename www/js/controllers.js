@@ -5,13 +5,22 @@ angular.module('ioniclol.controllers', [])
 
 .controller('PlayerIndexCtrl', function($scope, PlayerService) {
     $scope.players = PlayerService.all();
-    $scope.onRefresh = function() {
-        PlayerService.all(function(data){ 
+    
+    $scope.rightButtons = [
+  { 
+    type: 'button-positive',
+    content: '<i class="icon ion-navicon"></i>',
+    tap: function(e) {
+    }
+  }
+]
+    /* $scope.onRefresh = function() {
+       PlayerService.all().then(function(data){ 
             $scope.players = data;
             
-            $scope.$broadcast('scroll.refreshComplete');
+            $scope.$emit('scroll.refreshComplete');
         });
-    };
+    }; */
 })
 
 .controller('PlayerDetailCtrl', function($scope, $stateParams, PlayerService) {

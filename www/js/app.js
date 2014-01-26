@@ -54,6 +54,7 @@ angular.module('ioniclol', ['ionic', 'ioniclol.services', 'ioniclol.controllers'
     });
 
   $urlRouterProvider.otherwise('/tab/players');
+    
 
 });
 
